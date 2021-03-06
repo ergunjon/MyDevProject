@@ -1,0 +1,32 @@
+Jenkins:
+what are servers ? Whey we need them?
+1. Stay power on all the time()
+2. Strong internet connection(in GBps) all the time
+3. A lot of resources like RAM Disk etc
+=========================================================
+1. Developers will develop the code
+2. Runs the unit tests if everything goes well
+ask the DevOps person to build that code on Dev servers
+3. Developer verifies that code on Dev server
+4. Request to DevOps person to deploy it on the integration server
+5. Tester will ask DevOps person to deploy the code to QA server
+6. Tester may ask again DevOps person deploy it on the Performance server, Security testing servers
+7. DevOps person deploy application on Staging servers (replica of production server) UAT server on which UAT is performed.
+8. To production server
+Issues in the manual Testing/Deployment
+1. Time consuming
+2. if multiple developers are working there can be issues in build and to fix those issues we may
+need to look all of the newly added code
+3. No Automation means a lot of manual effort
+
+How to build a simple Job
+Login on Jenkins
+http://jenkins.syntaxtechs.net:8080/
+user name admin
+password admin
+ click on new item
+ click on freestyle project
+ click on apply save
+ scroll down to the page and click on build steps
+ write echo "any message"
+ click on save and build the project
